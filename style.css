@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: radial-gradient(circle at 10% 20%, rgb(10, 174, 227) 0%, rgb(124, 182, 255) 100.2%);
+    --secondary-color: #00246B;
+    --grid-size: 470px;
+}
+
+body{
+    background: var(--primary-color);
+}
+
+.box{
+    position: absolute;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 20px;
+    color: var(--secondary-color);
+}
+
+button{
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 700px;
+    position: relative;
+    margin: auto;
+    top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board{
+    height: var(--grid-size);
+    width: var(--grid-size);
+    position: relative;
+}
+
+.grid-line-1, .grid-line-2{
+    height: var(--grid-size);
+    width: 10px;
+    display: inline-block;
+    background-color: var(--secondary-color);
+}
+
+.grid-line-3, .grid-line-4{
+    height: 10px;
+    width: var(--grid-size);
+    display: inline-block;
+    background-color: var(--secondary-color);
+}
+
+.grid-line-1{
+    position: absolute;
+    left: 150px;
+}
+
+.grid-line-2{
+    position: absolute;
+    right: 150px;
+}
+
+.grid-line-3{
+    position: absolute;
+    top: 150px;
+}
+
+.grid-line-4{
+    position: absolute;
+    bottom: 150px;
+}
+
+.info{
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+#o-btn{
+    margin: 0px 30px;
+}
+
+#o-btn, #x-btn{
+    padding: 15px;
+}
+
+.start-container{
+    padding: 10px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 40px;
+    margin-top: 25px;
+}
